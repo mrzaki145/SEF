@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.25;
+	font-family: 'Mulish', sans-serif;
+	color: #0f0f2b;
+	background-color: #fff;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 0 15px;
+	/* outline: 1px solid red; */
+}
+
+/* NAV */
+
+.nav {
+	padding: 20px 0;
+}
+
+.nav .container {
+	display: flow-root; /* Modern Clearfix Alternative */
+	overflow: auto;
+}
+
+.logo {
+	float: left;
+}
+
+.nav__list {
+	list-style: none;
+	float: right;
+}
+
+.nav__list-item {
+	display: inline-block;
+	line-height: 54px;
+	margin-right: 20px;
+}
+.nav__list-item--last {
+	margin-right: 0;
+}
+
+.nav__link {
+	color: #868694;
+	font-weight: 500;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+.nav__link:hover {
+	text-decoration: underline;
+}
+.nav__link:hover,
+.nav__link--active {
+	color: inherit;
+}
+
+/* HEADER */
+
+.hero {
+	padding: 150px 0;
+}
+
+.hero h1 {
+	font-size: 48px;
+	line-height: 1;
+	font-weight: 700;
+	max-width: 20ch;
+}
+
+.hero p {
+	color: #1c1c47;
+	font-size: 18px;
+	width: 38ch;
+	margin: 15px 0 35px;
+}
+
+.btn {
+	font-weight: 500;
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px 25px;
+	color: #fff;
+	background-color: #442eba;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+.btn:hover {
+	background-color: rgba(68,46,186,0.8);
+}
+
+/* COURSES */
+
+.courses {
+	padding: 100px 0;
+	background-color: #F2F2F2;
+}
+
+.courses__list {
+	list-style: none;
+	display: flow-root;
+    margin: 0 -10px;
+}
+
+.course {
+	float: left;
+	box-sizing: border-box;
+/*	width: 238.5px;*/
+	width: calc(25% - 20px);
+	padding: 25px;
+	margin: 0 10px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	box-shadow: 0px 8px 15px rgba(36,44,170,0.01); /* 🙏 */
+	transition: box-shadow 0.3s ease;
+}
+.course:hover {
+	box-shadow: 0px 12px 20px rgba(36,44,170,0.15); /* 🙏 */
+}
+
+.course__logo {
+	width: 48px;
+	height: 48px;
+	margin-left: -10px;
+	margin-top: -48px;
+	margin-bottom: 5px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: inherit;
+}
+
+.course__lang {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.course__discription {
+	color: #868694;
+	transition: color 0.3s ease;
+}
+.course:hover .course__discription {
+	color: inherit;
+}
+
+.course a {
+	color: inherit;
+	display: inline-block;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+.course a:hover {
+	color: #442eba;
+}
+
+.dot {
+	font-size: 10px;
+	vertical-align: middle;
+}

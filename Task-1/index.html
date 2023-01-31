@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mostafa Reda" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEF &mdash; Task 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="about-me" title="About me">
+        <header>
+          <figure class="user">
+            <img
+              class="user__avatar"
+              width="64"
+              height="64"
+              src="./images/avatar_placeholder.png"
+              alt="Mostafa Reda"
+            />
+            <figcaption>
+              <h1 class="user__name">Mostafa Reda</h1>
+              <p class="user__job">Front-End Developer</p>
+            </figcaption>
+          </figure>
+        </header>
+
+        <section>
+          <h2>Languages I speak:</h2>
+          <ol class="langs" type="A">
+            <li>HTML</li>
+            <li>CSS/Sass</li>
+            <li>Javascript/ReactJS</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Social media links:</h2>
+          <ul class="links">
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+            <li>
+              <a href="#">Linkedin</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <!-- /about-me -->
+
+      <hr />
+
+      <section title="Contact me">
+        <form class="form">
+          <p class="form__group">
+            <!-- <label for="fullName" class="form__label">Full Name:</label> -->
+            <input
+              type="fullName"
+              id="fullName"
+              class="form__input"
+              name="fullName"
+              placeholder="Enter your full name"
+            />
+          </p>
+          <!-- /fullName -->
+
+          <p class="form__group">
+            <!-- <label for="email" class="form__label">Eamil:</label> -->
+            <input
+              type="email"
+              id="email"
+              class="form__input"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </p>
+          <!-- /email -->
+
+          <p class="form__group">
+            <!-- <label for="password" class="form__label">Password:</label> -->
+            <input
+              type="password"
+              id="password"
+              class="form__input"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </p>
+          <!-- /password -->
+
+          <p class="form__group">
+            <select name="location" title="location" class="form__input">
+              <option value="null" hidden>Your location</option>
+              <option value="egy">Egypt</option>
+              <option value="usa">United states of america</option>
+              <option value="uk">England</option>
+              <option value="fr">France</option>
+            </select>
+          </p>
+          <!-- /location -->
+
+          <p class="form__group">
+            Gender: &nbsp;
+            <label for="male">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                checked
+              />
+              Male
+            </label>
+            &nbsp;
+            <label for="female"
+              ><input type="radio" id="female" name="gender" value="female" />
+              Female
+            </label>
+          </p>
+          <!-- /gender -->
+
+          <button type="submit" class="form__btn">Submit</button>
+        </form>
+      </section>
+      <!-- /form -->
+    </main>
+  </body>
+</html>
