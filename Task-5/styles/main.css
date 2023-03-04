@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --white: 0 0% 100%;
+  --gray: 0 0% 70%;
+  --black: 0 0% 0%;
+  --primary: 221 51% 16%;
+  --accent: 243 75% 59%;
+  --gold: 43 96% 56%;
+
+  /* spacing */
+  --space-0: 0.25rem;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+
+  /* corner-radius */
+  --corner-radius-md: 0.5rem;
+  --corner-radius-lg: 0.75rem;
+}
+
+html,
+body {
+  block-size: 100%;
+}
+
+body {
+  position: relative;
+  color: hsl(var(--black));
+  background-color: hsl(var(--white));
+  font: 500 1rem / 1.5 "Plus Jakarta Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-inline-size: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2 {
+  line-height: 1;
+}
+
+p {
+  color: hsl(var(--black) / 0.85);
+}
+
+#root {
+  isolation: isolate;
+}
+
+.wrapper {
+  display: grid;
+  gap: var(--space-4);
+  align-items: start;
+  grid-template-columns: 1fr 24rem;
+  padding-block: var(--space-6);
+}
+
+.container {
+  max-inline-size: 75rem;
+  padding-inline: var(--space-2);
+  margin-inline: auto;
+}
+
+/* products */
+
+.products {
+  list-style: none;
+  display: grid;
+  gap: var(--space-4) var(--space-2);
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, auto)); */
+}
+
+.product {
+  text-align: center;
+}
+
+.product__thumb {
+  /* inline-size: 15rem; */
+  margin-inline: auto;
+}
+
+.product__name {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(var(--black) / 0.8);
+  margin-block-end: var(--space-0);
+}
+
+.product__price {
+  font-weight: 700;
+  margin-block-end: var(--space-1);
+}
+.price::before {
+  content: "\0024";
+}
+
+.product__btn {
+  appearance: none;
+  border: 1px solid hsl(var(--gray) / 0.5);
+  border-radius: var(--corner-radius-md);
+  background-color: transparent;
+  color: hsl(var(--black));
+  display: block;
+  inline-size: 75%;
+  margin-inline: auto;
+  padding: var(--space-1);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transition-property: color, background-color;
+}
+.product__btn:hover {
+  color: hsl(var(--white));
+  background-color: hsl(var(--black));
+}
+
+/* cart */
+
+.cart {
+  position: sticky;
+  inset: var(--space-3) auto;
+  display: flex;
+  gap: var(--space-3);
+  flex-direction: column;
+  max-block-size: calc(100vh - (var(--space-3) * 2));
+  padding: var(--space-3);
+  padding-block-end: var(--space-3);
+  background-color: hsl(var(--gray) / 0.15);
+  border-radius: var(--corner-radius-md);
+}
+
+.cart > * {
+  display: flex;
+  align-items: center;
+}
+
+.cart__header {
+  justify-content: space-between;
+}
+
+.cart__header h2 {
+  font-size: 1.125rem;
+}
+
+.cart__items-count {
+  font-size: 0.75rem;
+}
+
+.cart__items {
+  gap: var(--space-2);
+  align-items: stretch;
+  flex-direction: column;
+
+  overflow: visible auto;
+  padding-inline-end: var(--space-1);
+  margin-inline-end: calc(var(--space-0) * -1);
+}
+.cart__items:empty {
+  display: none;
+}
+
+.item {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.item__thumb {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: var(--space-0);
+  background-color: hsl(var(--white));
+  border-radius: var(--corner-radius-md);
+  border: 1px solid hsl(var(--gray) / 0.25);
+}
+
+.item__info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item__name,
+.item__price,
+.item__amount {
+  font-size: 0.875rem;
+}
+
+.item__name,
+.item__amount {
+  font-weight: 400;
+}
+
+.item__amount {
+  color: hsl(var(--black) / 0.5);
+  margin-block-start: 0.125rem;
+}
+
+.item__price {
+  font-weight: 700;
+}
+
+.cart__footer {
+  justify-content: space-between;
+  border-block-start: 2px solid hsl(var(--gray) / 0.4);
+  padding-block-start: var(--space-2);
+}
+
+.cart__footer p {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
