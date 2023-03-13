@@ -1,0 +1,31 @@
+.card-img {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.team__member-thumb {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.modal-footer {
+  padding: 0;
+}
+
+.form-check {
+  padding-left: 1.25rem;
+}
+
+.carousel-item img {
+  height: 650px;
+  object-fit: cover;
+  object-position: center;
+}

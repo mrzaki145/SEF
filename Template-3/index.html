@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mostafa Reda" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Template-3</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">Brand</a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Link -->
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Courses
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">HTML5</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">CSS3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Javascript</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Python</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Java</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item me-3">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="search-addon"
+                />
+                <button type="button" class="btn btn-outline-primary">
+                  search
+                </button>
+              </div>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div
+      id="carouselMaterialStyle"
+      class="carousel slide carousel-fade"
+      data-mdb-ride="carousel"
+    >
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-mdb-target="#carouselMaterialStyle"
+          data-mdb-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselMaterialStyle"
+          data-mdb-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselMaterialStyle"
+          data-mdb-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner rounded-5 shadow-4-strong">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="bg-image">
+            <img
+              src="/img/clement-helardot-95YRwf6CNw8-unsplash.jpg"
+              class="w-100"
+            />
+            <div
+              class="mask"
+              style="background-color: hsla(0, 0%, 0%, 0.4)"
+            ></div>
+          </div>
+          <div class="carousel-caption">
+            <h3>HTML5</h3>
+            <a
+              class="btn btn-primary btn-lg m-2"
+              href="#"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+              >Start tutorial</a
+            >
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="bg-image">
+            <img
+              src="/img/luke-peters-B6JINerWMz0-unsplash.jpg"
+              class="w-100"
+            />
+            <div
+              class="mask"
+              style="background-color: hsla(0, 0%, 0%, 0.4)"
+            ></div>
+          </div>
+          <div class="carousel-caption">
+            <h3>CSS3</h3>
+            <a
+              class="btn btn-primary btn-lg m-2"
+              href="#"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+              >Start tutorial</a
+            >
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="bg-image">
+            <img
+              src="/img/markus-spiske-MI9-PY5cyNs-unsplash.jpg"
+              class="w-100"
+            />
+            <div
+              class="mask"
+              style="background-color: hsla(0, 0%, 0%, 0.4)"
+            ></div>
+          </div>
+          <div class="carousel-caption">
+            <h3>Javascript</h3>
+            <a
+              class="btn btn-primary btn-lg m-2"
+              href="#"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+              >Start tutorial</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-mdb-target="#carouselMaterialStyle"
+        data-mdb-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-mdb-target="#carouselMaterialStyle"
+        data-mdb-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
+
+    <!-- Jumbotron -->
+    <div class="p-5 text-center bg-light">
+      <div class="container">
+        <h1 class="mb-3">Welcome</h1>
+        <h4 class="mb-3">programming without language and without code.</h4>
+        <a class="btn btn-primary" href="" role="button">Call to action</a>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+
+    <!-- accordion -->
+    <section class="py-4">
+      <div class="container">
+        <h4 class="mb-4 text-center">Programming language</h4>
+        <div class="accordion" id="accordionFlushExampleX">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOneX">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#flush-collapseOneX"
+                aria-expanded="false"
+                aria-controls="flush-collapseOneX"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOneX"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOneX"
+              data-mdb-parent="#accordionFlushExampleX"
+            >
+              <div class="accordion-body">
+                Nothing more exciting happening here in terms of content, but
+                just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a
+                real-world application.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwoX">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#flush-collapseTwoX"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwoX"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwoX"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwoX"
+              data-mdb-parent="#accordionFlushExampleX"
+            >
+              <div class="accordion-body">
+                Nothing more exciting happening here in terms of content, but
+                just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a
+                real-world application.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThreeX">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#flush-collapseThreeX"
+                aria-expanded="false"
+                aria-controls="flush-collapseThreeX"
+              >
+                Accordion Item #3
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThreeX"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThreeX"
+              data-mdb-parent="#accordionFlushExampleX"
+            >
+              <div class="accordion-body">
+                Nothing more exciting happening here in terms of content, but
+                just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a
+                real-world application.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-3">
+      <div class="container">
+        <h5 class="mb-3">Python is very easy</h5>
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h5 class="text-light">
+              try the code below from
+              <a href="https://www.python.org/shell/" target="_blank">here</a>
+            </h5>
+            <pre><code class="text-info" id="mypython">name = input('enter your name: '); print("Hello" + name)</code></pre>
+            <div
+              class="btn btn-sm btn-outline-light .btnbefo::before .btnbefo::after btnbefo"
+              id="copyfun"
+            >
+              copy
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-3">
+      <div class="container">
+        <h5 class="mb-3">Java is very easy</h5>
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h5 class="text-light">
+              try the code below from
+              <a
+                href="https://www.onlinegdb.com/online_java_compiler"
+                target="_blank"
+                >here</a
+              >
+            </h5>
+            <pre><code class="text-info" id="myjava">System.out.println("Hello World!");</code></pre>
+            <div
+              class="btn btn-sm btn-outline-light .btnbefo::before .btnbefo::after btnbefo"
+            >
+              copy
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-3">
+      <div class="container">
+        <h5 class="mb-3">Javascript is very easy</h5>
+
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h5 class="text-light">
+              try the code below from
+              <a
+                href="https://www.programiz.com/javascript/online-compiler/"
+                target="_blank"
+                >here</a
+              >
+            </h5>
+            <pre><code class="text-info" id="myjavascr">console.log("Welcome to Programiz!");</code></pre>
+            <div
+              class="btn btn-sm btn-outline-light .btnbefo::before .btnbefo::after btnbefo"
+            >
+              copy
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cards -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Courses</h2>
+
+        <div class="row gx-4 mb-4">
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card">
+              <img
+                src="./img/languages/html.png"
+                class="card-img card-img-top"
+                alt="Fissure in Sandstone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">HTML5</h5>
+                <p class="card-text">
+                  HTML 5 is the structure of our web pages. It is the markup
+                  that represents the DOM (document object model).
+                </p>
+                <a href="#!" class="btn btn-primary">Start tutorial</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card">
+              <img
+                src="./img/languages/css.png"
+                class="card-img card-img-top"
+                alt="Fissure in Sandstone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">CSS3</h5>
+                <p class="card-text">
+                  Cascading Style Sheets is a style sheet language used for
+                  describing the presentation of a document written in a markup
+                  language such as HTML.
+                </p>
+                <a href="#!" class="btn btn-primary">Start tutorial</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card">
+              <img
+                src="./img/languages/javascript.png"
+                class="card-img card-img-top"
+                alt="Fissure in Sandstone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Javascript</h5>
+                <p class="card-text">
+                  A strong understanding of JavaScript is essential for having a
+                  successful career, no matter which framework you use.
+                </p>
+                <a href="#!" class="btn btn-primary">Start tutorial</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card">
+              <img
+                src="./img/languages/react.png"
+                class="card-img card-img-top"
+                alt="Fissure in Sandstone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">React.js</h5>
+                <p class="card-text">
+                  One of the web’s most popular frameworks for building
+                  JavaScript applications. If you know what you’re doing.
+                </p>
+                <a href="#!" class="btn btn-primary">Start tutorial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gx-4 mb-4">
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card h-100">
+              <img
+                src="./img/languages/node.png"
+                class="card-img card-img-top"
+                alt="Fissure in Sandstone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nodejs</h5>
+                <p class="card-text">
+                  Node.js uses an event-driven, non-blocking I/O model that
+                  makes it lightweight and efficient, perfect for data-intensive
+                  real-time applications that run across distributed devices.
+                </p>
+                <a href="#!" class="btn btn-primary">Start tutorial</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card">
+              <img
+                src="./img/languages/python.png"
+                class="card-img card-img-top"
+                alt="Fissure in Sandstone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Python</h5>
+                <p class="card-text">
+                  Python is a widely used dynamically typed programming
+                  language. It allows for many different programming paradigms.
+                </p>
+                <a href="#!" class="btn btn-primary">Start tutorial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Background image -->
+    <div
+      class="bg-image"
+      style="
+        background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp');
+        background-attachment: fixed;
+        height: 50vh;
+      "
+    ></div>
+    <!-- Background image -->
+
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Thanks For</h2>
+
+        <div class="row gx-3" style="justify-content: center">
+          <div class="col-lg-3 mb-4 col-sm-6 col-12">
+            <img
+              src="./img/team/avatar-female-1.png"
+              class="card-img-top team__member-thumb"
+              width="200px"
+              alt="memo"
+            />
+            <p class="card-text m-0">Sophia Ella</p>
+          </div>
+          <div class="col-lg-3 mb-4 col-sm-6 col-12">
+            <img
+              src="./img/team/avatar-male-1.png"
+              width="200px"
+              class="card-img-top team__member-thumb"
+              alt="shimo"
+            />
+            <p class="card-text m-0">Hyeon Vivek</p>
+          </div>
+          <div class="col-lg-3 mb-4 col-sm-6 col-12">
+            <img
+              src="./img/team/avatar-female-3.png"
+              width="200px"
+              class="card-img-top team__member-thumb"
+              alt="meme"
+            />
+            <p class="card-text m-0">Veronika Inaya</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center">Join Us</h2>
+
+        <div class="row gx-4 px-3 justify-content-center">
+          <div class="card col-lg-4 m-2 bg-dark text-white">
+            <div class="card-body text-light d-flex flex-column text-center">
+              <h6 class="card-title mb-4">Subscribe Now</h6>
+              <!-- Linkedin -->
+              <i class="fab fa-linkedin-in fa-2x" style="color: #0082ca"></i>
+
+              <a href="" target="_blank" class="card-link">Go to link</a>
+            </div>
+          </div>
+          <div class="card col-lg-4 m-2 bg-dark text-white">
+            <div class="card-body text-light d-flex flex-column text-center">
+              <h6 class="card-title mb-4">Follow</h6>
+              <!-- Twitter -->
+              <i class="fab fa-twitter fa-2x" style="color: #55acee"></i>
+              <a href="" target="_blank" class="card-link">Go to link</a>
+            </div>
+          </div>
+          <div class="card col-lg-4 m-2 bg-dark text-white">
+            <div class="card-body text-light d-flex flex-column text-center">
+              <h6 class="card-title mb-4">Like the page</h6>
+              <!-- Facebook -->
+              <i class="fab fa-facebook-f fa-2x" style="color: #3b5998"></i>
+              <a href="" target="_blank" class="card-link">Go to link</a>
+            </div>
+          </div>
+          <div class="card col-lg-4 m-2 bg-dark text-white">
+            <div class="card-body text-light d-flex flex-column text-center">
+              <h6 class="card-title mb-4">watch vedios</h6>
+              <!-- Youtube -->
+              <i class="fab fa-youtube fa-2x" style="color: #ed302f"></i>
+              <a href="" target="_blank" class="card-link">Go to link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light mt-5 p-2 pb-5">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class="border-top my-3" />
+            <h5>
+              <img src="img/facebook-512.webp" alt="good pic" width="20" />
+              Good Company
+            </h5>
+            <hr class="border-top my-3" />
+            <address>
+              <p>Tel : 000-000-000</p>
+              <p>Address : EGYPT</p>
+              <p>Fax : 000-000-000</p>
+            </address>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top my-3" />
+            <h5>
+              <img src="img/facebook-512.webp" alt="good pic" width="20" />
+              Important links
+            </h5>
+            <hr class="border-top my-3" />
+            <p><a href="" target="_blank">Visit Us</a></p>
+            <p><a href="" target="_blank">Take alook</a></p>
+            <p><a href="" target="_blank">Your health is more important</a></p>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top my-3" />
+            <h5>
+              <img src="img/facebook-512.webp" alt="good pic" width="20" />
+              Vision
+            </h5>
+            <hr class="border-top my-3" />
+            <p>Serveices for all</p>
+            <p>Provide best serveices</p>
+            <p>you will be better than before</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <span class="text-center d-block text-secondary"
+        >&copy; 2023 Mostafa Reda.</span
+      >
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-secondary" id="staticBackdropLabel">
+              Login
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- form -->
+            <form class="AVAST_PAM_loginform">
+              <div class="mb-3">
+                <div class="form-outline">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control form-control-lg"
+                  />
+                  <label class="form-label" for="email">Email address</label>
+                </div>
+                <div id="textExample1" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="form-outline">
+                  <input
+                    type="password"
+                    id="email"
+                    class="form-control form-control-lg"
+                  />
+                  <label class="form-label" for="email">Password</label>
+                </div>
+              </div>
+              <div class="mb-3 form-check">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Remember me</label
+                  >
+                </div>
+              </div>
+            </form>
+            <!-- /form -->
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Login</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-mdb-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+  </body>
+</html>
