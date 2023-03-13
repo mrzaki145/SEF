@@ -25,7 +25,13 @@
 }
 
 .carousel-item img {
-  height: 650px;
+  height: 450px;
   object-fit: cover;
   object-position: center;
+}
+
+@media (min-width: 1024px) {
+  .carousel-item img {
+    height: 650px;
+  }
 }
